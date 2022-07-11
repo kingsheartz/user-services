@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Main menu</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js"></script>
+</head>
+<style>
+    body {
+        background: url(https://wallpapercave.com/wp/wp2570969.png) no-repeat;
+        height: 100%;
+        background-position: center;
+        width: 100%;
+        overflow-y: hidden;
+    }
+</style>
+
+<body onload="loaded()">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://www.w3schools.com/bootstrap5/img_avatar1.png" alt="Logo" style="width:40px;"
+                    class="rounded-pill">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">Hai <span id="username"></span></a>
+                    </li>
+                </ul>
+            </div>
+            <a class="navbar-brand"
+                href="http://localhost:8085/auth/realms/restservice/protocol/openid-connect/logout?redirect_uri=http://localhost:8080/service-1.0/">
+                <i class="fa fa-power-off"></i>
+            </a>
+            <a class="navbar-brand" id="login" href="http://localhost:8080/service-1.0/index.html">
+                <i class="fa fa-sign-in"></i>
+            </a>
+        </div>
+    </nav>
+    <div class="welcome-div">
+        <div class="container-div">
+            <div class="left">
+                <ul class="sideNav">
+
+                    <li class="navTabs" onclick="register()">
+                        Register
+                    </li>
+
+                    <li class="navTabs" onclick="updatePhone()">
+                        Update Phone
+                    </li>
+
+                    <li class="navTabs" onclick="removeUser()">
+                        Remove User
+                    </li>
+
+                    <li class="navTabs" onclick="deleteUser()">
+                        Delete User
+                    </li>
+
+                    <li class="navTabs" onclick="selectUser()">
+                        Select User
+                    </li>
+
+                    <li class="navTabs" onclick="selectUserList()">
+                        Select UserList
+                    </li>
+
+                    <li class="navTabs" onclick="sendLogData()">
+                        Send Log Data
+                    </li>
+
+                    <li class="navTabs" onclick="recieveLogData()">
+                        Recieve Log Data
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="right">
+
+                <!------------------------------------R E G I S T E R------------------------------------->
+                <div id="register" class="hidden">
+                    <div class="sideNav" style="padding-right: 0;">
+                        <div class="heading">
+                            <h2><u>REGISTER</u></h2>
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="text" id="regFirstName" autocomplete="false" class="form-control"
+                                placeholder="Firstname" aria-label="Firstname" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="email" id="regEmail" autocomplete="false" class="form-control"
+                                placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="tel" id="regPhone" autocomplete="false" class="form-control"
+                                placeholder="Phone" aria-label="Phone" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="tel" id="regPin" autocomplete="false" class="form-control" placeholder="Pin"
+                                aria-label="Pin" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <textarea type="text" autocomplete="false" id="regAddress" class="form-control"
+                                placeholder="Address" aria-label="Address" aria-describedby="basic-addon1"></textarea>
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="password" id="regPassword" autocomplete="false" class="form-control"
+                                placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-primary button" onclick="registerUser()" type="button">Register</button>
+                    </div>
+                </div>
+                <!------------------------------------U P D A T E   P H O N E------------------------------------->
+                <div id="update" class="hidden">
+                    <div class="sideNav" style="padding-right: 0;">
+                        <div class="heading">
+                            <h2><u>UPDATE PHONE</u></h2>
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="tel" id="updateUserId" class="form-control" placeholder="User ID"
+                                aria-label="userid" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="tel" id="updateNumber" class="form-control" placeholder="Phone"
+                                aria-label="Phone" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-primary button" onclick="updatePhoneService()" type="button">Update
+                                Phone</button>
+                        </div>
+                    </div>
+
+                </div>
+                <!------------------------------------U P D A T E   P H O N E------------------------------------->
+
+
+
+
+
+
+                <!------------------------------------R E M O V E   U S E R------------------------------------->
+
+                <div id="removeUser" class="hidden">
+                    <div class="sideNav" style="padding-right: 0;">
+                        <div class="heading">
+                            <h2><u>REMOVE USER</u></h2>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="tel" id="removeUserId" class="form-control" placeholder="User ID"
+                                aria-label="userid" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-primary button" onclick="removeUserService()" type="button">Remove
+                                User</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!------------------------------------R E M O V E   U S E R------------------------------------->
+
+
+
+
+
+
+                <!------------------------------------D E L E T E   U S E R------------------------------------->
+                <div id="deleteUser" class="hidden">
+                    <div class="sideNav" style="padding-right: 0;">
+                        <div class="heading">
+                            <h2><u>DELETE USER</u></h2>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="tel" id="deleteUserId" class="form-control" placeholder="User ID"
+                                aria-label="userid" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-primary button" onclick="deleteUserService()" type="button">Delete
+                                User</button>
+                        </div>
+                    </div>
+
+                </div>
+                <!------------------------------------D E L E T E   U S E R------------------------------------->
+
+
+
+
+                <!------------------------------------S E L E C T   U S E R------------------------------------->
+                <div id="selectUser" class="hidden">
+                    <div class="sideNav" style="padding-right: 0;">
+                        <div class="heading">
+                            <h2><u>SEARCH USER</u></h2>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="tel" id="selectUserId" class="form-control" placeholder="User ID"
+                                aria-label="userid" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-primary button" onclick="selectUserService()"
+                                type="button">Search</button>
+                        </div>
+                    </div>
+
+
+                    <table id="userTable" class="hidden">
+                        <tr>
+                            <th colspan="2" style="text-align: center;"><u>U S E R D E T A I L S</u></th>
+                        </tr>
+                        <tr>
+                            <th>Name</th>
+                            <td id="selectUserFirstName"></td>
+                        </tr>
+                        <tr>
+                            <th>Phone</th>
+                            <td id="selectUserPhone"></td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td id="selectUserEmail"></td>
+                        </tr>
+                        <tr>
+                            <th>Pin</th>
+                            <td id="selectUserPin"></td>
+                        </tr>
+                        <tr>
+                            <th>Address</th>
+                            <td id="selectUserAddress"></td>
+                        </tr>
+                    </table>
+
+                </div>
+                <!------------------------------------S E L E C T   U S E R------------------------------------->
+
+
+
+
+
+
+                <!------------------------------------S E L E C T   U S E R  L I S T------------------------------------->
+                <div id="selectUserList" class="hidden">
+                    <div class="sideNav" style="padding-right: 0;">
+                        <div class="heading">
+                            <h2><u>SEARCH USER LIST</u></h2>
+                        </div>
+
+                        <table id="userDataList"></table>
+                    </div>
+
+                </div>
+                <!------------------------------------S E L E C T   U S E R  L I S T------------------------------------->
+
+
+
+                <!------------------------------------S E N D   L O G    D A T A------------------------------------->
+                <div id="sendLogData" class="hidden">
+                    <div class="sideNav" style="padding-right: 0;">
+                        <div class="heading">
+                            <h2><u>SEND LOG DATA</u></h2>
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="text" id="logDataName" autocomplete="false" class="form-control"
+                                placeholder="Name" aria-label="logDataName" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="email" id="logDataEmail" autocomplete="false" class="form-control"
+                                placeholder="Email" aria-label="logDataEmail" aria-describedby="basic-addon1">
+                        </div>
+                       
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-primary button" onclick="sendLogDataService()" type="button">Send</button>
+                        </div>
+                    </div>
+                </div>
+                <!------------------------------------S E N D   L O G    D A T A------------------------------------->
+
+
+                <!------------------------------------G E T   L O G    D A T A------------------------------------->
+                <div id="getLogData" class="hidden">
+                    <div class="sideNav" style="padding-right: 0;">
+                        <div class="heading">
+                            <h2><u>RECIEVE LOG DATA</u></h2>
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="text" id="getDataIndexName" onkeyup="fetchSearchElement()" autocomplete="false" class="form-control"
+                                placeholder="Index name" aria-label="getDataIndexName" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="tel" id="getDataFrom" autocomplete="false" class="form-control"
+                                placeholder="From" aria-label="getDataFrom" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="tel" id="getDataSize" autocomplete="false" class="form-control"
+                                placeholder="Size" aria-label="getDataSize" aria-describedby="basic-addon1">
+                        </div>
+                        <div id="searchFields">
+                            
+                        </div>
+                        
+                       
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-primary button" onclick="recieveLogDataService()" type="button">Send</button>
+                    </div>
+                    <div class="tableDiv">
+                        <table id="logDataReciever"></table>
+                    </div>
+                    </div>
+
+                </div>
+                <!------------------------------------G E T   L O G    D A T A------------------------------------->
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

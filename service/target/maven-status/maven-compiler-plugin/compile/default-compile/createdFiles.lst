@@ -1,0 +1,12 @@
+com\keycloak\model\ELKStack\ELKResponseData.class
+com\keycloak\model\User.class
+com\keycloak\model\ELKStack\Logger.class
+com\keycloak\model\Log.class
+com\keycloak\rest\JAXRSConfiguration.class
+com\keycloak\model\ELKStack\IndexData.class
+com\keycloak\service\ElasticSearchServices.class
+com\keycloak\service\ServiceProvider.class
+com\keycloak\repository\HibernateOperations.class
+com\keycloak\rest\EndPoint.class
+com\keycloak\model\Login.class
+com\keycloak\model\ResponseData.class
