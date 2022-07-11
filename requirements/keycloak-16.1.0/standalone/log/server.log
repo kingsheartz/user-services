@@ -1,0 +1,115 @@
+2022-01-27 15:44:45,116 INFO  [org.jboss.modules] (main) JBoss Modules version 2.0.0.Final
+2022-01-27 15:44:48,586 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.13.Final
+2022-01-27 15:44:48,594 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final
+2022-01-27 15:44:48,763 INFO  [org.jboss.as] (MSC service thread 1-1) WFLYSRV0049: Keycloak 16.1.0 (WildFly Core 18.0.0.Final) starting
+2022-01-27 15:44:48,764 DEBUG [org.jboss.as.config] (MSC service thread 1-1) Configured system properties:
+	file.encoding = Cp1252
+	file.separator = \
+	java.awt.headless = true
+	java.class.path = D:\JAVA REPOSITORY\Docker\requirements\keycloak-16.1.0\jboss-modules.jar
+	java.class.version = 61.0
+	java.home = C:\Program Files\Java\jdk-17.0.1
+	java.io.tmpdir = C:\Users\1219\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Java\jdk-17.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\nodejs\;C:\Users\1219\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\1219\AppData\Local\Programs\Python\Python310\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\1219\AppData\Local\Microsoft\WindowsApps;C:\Users\1219\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\1219\AppData\Local\GitHubDesktop\bin;C:\Users\1219\AppData\Roaming\npm;C:\Program Files\nodejs;;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 17.0.1+12-LTS-39
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 17
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = https://java.oracle.com/
+	java.vendor.url.bug = https://bugreport.java.com/bugreport/
+	java.version = 17.0.1
+	java.version.date = 2021-10-19
+	java.vm.compressedOopsMode = 32-bit
+	java.vm.info = mixed mode, sharing
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 17
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 17.0.1+12-LTS-39
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.home.dir = D:\JAVA REPOSITORY\Docker\requirements\keycloak-16.1.0
+	jboss.host.name = l1181
+	jboss.modules.dir = D:\JAVA REPOSITORY\Docker\requirements\keycloak-16.1.0\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = l1181
+	jboss.qualified.host.name = l1181
+	jboss.server.base.dir = D:\JAVA REPOSITORY\Docker\requirements\keycloak-16.1.0\standalone
+	jboss.server.config.dir = D:\JAVA REPOSITORY\Docker\requirements\keycloak-16.1.0\standalone\configuration
+	jboss.server.data.dir = D:\JAVA REPOSITORY\Docker\requirements\keycloak-16.1.0\standalone\data
+	jboss.server.deploy.dir = D:\JAVA REPOSITORY\Docker\requirements\keycloak-16.1.0\standalone\data\content
+	jboss.server.log.dir = D:\JAVA REPOSITORY\Docker\requirements\keycloak-16.1.0\standalone\log
+	jboss.server.name = l1181
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = D:\JAVA REPOSITORY\Docker\requirements\keycloak-16.1.0\standalone\tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:D:\JAVA REPOSITORY\Docker\requirements\keycloak-16.1.0\standalone\configuration/logging.properties
+	module.path = D:\JAVA REPOSITORY\Docker\requirements\keycloak-16.1.0\modules
+	native.encoding = Cp1252
+	org.jboss.boot.log.file = D:\JAVA REPOSITORY\Docker\requirements\keycloak-16.1.0\standalone\log\server.log
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Windows 10
+	os.version = 10.0
+	path.separator = ;
+	program.name = standalone.bat
+	sun.arch.data.model = 64
+	sun.boot.library.path = C:\Program Files\Java\jdk-17.0.1\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = D:\JAVA REPOSITORY\Docker\requirements\keycloak-16.1.0\jboss-modules.jar -mp D:\JAVA REPOSITORY\Docker\requirements\keycloak-16.1.0\modules org.jboss.as.standalone -Djboss.home.dir=D:\JAVA REPOSITORY\Docker\requirements\keycloak-16.1.0
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	sun.stderr.encoding = cp437
+	sun.stdout.encoding = cp437
+	user.country = US
+	user.dir = D:\JAVA REPOSITORY\Docker\requirements\keycloak-16.1.0\bin
+	user.home = C:\Users\1219
+	user.language = en
+	user.name = 1219
+	user.script = 
+	user.timezone = Asia/Calcutta
+	user.variant = 
+2022-01-27 15:44:48,767 DEBUG [org.jboss.as.config] (MSC service thread 1-1) VM Arguments: -Dprogram.name=standalone.bat -Xms64M -Xmx512M -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true --add-exports=java.desktop/sun.awt=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.ldap=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.security=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.management/javax.management=ALL-UNNAMED --add-opens=java.naming/javax.naming=ALL-UNNAMED -Dorg.jboss.boot.log.file=D:\JAVA REPOSITORY\Docker\requirements\keycloak-16.1.0\standalone\log\server.log -Dlogging.configuration=file:D:\JAVA REPOSITORY\Docker\requirements\keycloak-16.1.0\standalone\configuration/logging.properties 
+2022-01-27 15:44:50,572 INFO  [org.wildfly.security] (ServerService Thread Pool -- 19) ELY00001: WildFly Elytron version 1.18.1.Final
+2022-01-27 15:44:55,010 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2022-01-27 15:44:55,063 INFO  [org.xnio] (MSC service thread 1-3) XNIO version 3.8.5.Final
+2022-01-27 15:44:55,074 INFO  [org.xnio.nio] (MSC service thread 1-3) XNIO NIO Implementation Version 3.8.5.Final
+2022-01-27 15:44:55,115 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 38) WFLYRS0016: RESTEasy version 4.7.4.Final
+2022-01-27 15:44:55,131 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 49) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2022-01-27 15:44:55,133 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 36) WFLYCLINF0001: Activating Infinispan subsystem.
+2022-01-27 15:44:55,145 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 35) WFLYHEALTH0001: Activating Base Health Subsystem
+2022-01-27 15:44:55,176 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 45) WFLYNAM0001: Activating Naming Subsystem
+2022-01-27 15:44:55,190 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 44) WFLYMETRICS0001: Activating Base Metrics Subsystem
+2022-01-27 15:44:55,264 INFO  [org.jboss.as.naming] (MSC service thread 1-5) WFLYNAM0003: Starting Naming Service
+2022-01-27 15:44:55,265 INFO  [org.jboss.as.connector] (MSC service thread 1-5) WFLYJCA0009: Starting Jakarta Connectors Subsystem (WildFly/IronJacamar 1.5.3.Final)
+2022-01-27 15:44:55,312 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-1) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2022-01-27 15:44:55,320 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-5) WFLYELY00023: KeyStore file 'D:\JAVA REPOSITORY\Docker\requirements\keycloak-16.1.0\standalone\configuration\application.keystore' does not exist. Used blank.
+2022-01-27 15:44:55,329 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 30) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2022-01-27 15:44:55,335 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-1) WFLYELY01084: KeyStore D:\JAVA REPOSITORY\Docker\requirements\keycloak-16.1.0\standalone\configuration\application.keystore not found, it will be auto generated on first use with a self-signed certificate for host localhost
+2022-01-27 15:44:55,354 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0018: Started Driver service with driver-name = h2
+2022-01-27 15:44:55,523 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 37) WFLYIO001: Worker 'default' has auto-configured to 16 IO threads with 128 max task threads based on your 8 available processors
+2022-01-27 15:44:55,580 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0003: Undertow 2.2.14.Final starting
+2022-01-27 15:44:55,631 INFO  [org.jboss.remoting] (MSC service thread 1-6) JBoss Remoting version 5.0.23.Final
+2022-01-27 15:44:55,674 WARN  [org.wildfly.clustering.web.undertow] (ServerService Thread Pool -- 50) WFLYCLWEBUT0007: No routing provider found for default-server; using legacy provider based on static configuration
+2022-01-27 15:44:55,701 INFO  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 32 (per class), which is derived from the number of CPUs on this host.
+2022-01-27 15:44:55,701 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 128 (per class), which is derived from thread worker pool sizing.
+2022-01-27 15:44:55,784 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 50) WFLYUT0014: Creating file handler for path 'D:\JAVA REPOSITORY\Docker\requirements\keycloak-16.1.0/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2022-01-27 15:44:55,811 INFO  [org.jboss.as.ejb3] (MSC service thread 1-4) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2022-01-27 15:44:55,839 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0012: Started server default-server.
+2022-01-27 15:44:55,841 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) Queuing requests.
+2022-01-27 15:44:55,857 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0018: Host default-host starting
+2022-01-27 15:44:55,887 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8085
+2022-01-27 15:44:55,906 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8445
+2022-01-27 15:44:55,916 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0001: Bound data source [java:jboss/datasources/KeycloakDS]
+2022-01-27 15:44:55,916 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2022-01-27 15:44:58,320 INFO  [org.jboss.as.patching] (MSC service thread 1-2) WFLYPAT0050: Keycloak cumulative patch ID is: base, one-off patches include: none
